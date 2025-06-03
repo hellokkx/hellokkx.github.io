@@ -44,7 +44,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">个人主页(更新中)</h1>
+        <h1 class="sitename">个人主页</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -53,7 +53,7 @@
           <li><a href="#about">基本信息</a></li>
           <li><a href="#education">教育背景</a></li>
           <li><a href="#work">实习经历</a></li>
-          <li><a href="#services">项目经历</a></li>
+          <li><a href="#projects">项目经历</a></li>
           <li><a href="#portfolio">获奖经历</a></li>
           <!-- <li><a href="#contact">联系方式</a></li> -->
         </ul>
@@ -78,7 +78,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row align-items-center content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200" style="padding-left: 3.5rem;">
             <h2>林科贤</h2>
             <p class="lead">本硕期间综合绩点均属于专业前5%<br>
               研究生毕业于香港大学计算机科学<br>
@@ -104,8 +104,8 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="hero-image">
-              <img src="assets/img/profile/zhengjian.jpg" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300" style="width: 400px; height: auto">
+            <div class="hero-image text-center">
+              <img src="assets/img/profile/zhengjian.jpg" alt="Portfolio Hero Image" class="img-fluid rounded-4" data-aos="zoom-out" data-aos-delay="300" style="max-width: 320px; width: 100%; height: auto; margin: 0 auto;">
               <div class="shape-1"></div>
               <div class="shape-2"></div>
             </div>
@@ -494,85 +494,153 @@
 
 
     <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>项目经历</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
+    <section id="projects" class="project-experience">
+      <div class="container">
+        <div class="section-title">
+          <h2>项目经历</h2>
+          <p>以下是我参与的主要项目经历</p>
         </div>
-      </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="project-card">
+              <div class="project-header">
+                <h3 class="project-title">HKU TokenFlow校园代币生态系统</h3>
+                <span class="project-period">2024.09 - 至今</span>
+              </div>
+              <div class="project-content">
+                <ul>
+                  <li>作为香港大学计算机科学专业毕业设计项目，开发基于区块链的校园代币生态系统Android应用</li>
+                  <li>负责前端开发，设计并实现多角色用户界面（管理员、商家、学生），确保良好的用户体验</li>
+                  <li>实现基于AES加密算法的密码安全存储机制，保障用户数据安全</li>
+                  <li>设计并开发用户权限管理系统，实现不同角色用户的差异化功能访问</li>
+                  <li>与后端团队协作，实现数据加密存储和区块链智能合约的集成</li>
+                </ul>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Android开发</span>
+                <span class="project-tag">区块链</span>
+                <span class="project-tag">AES加密</span>
+                <span class="project-tag">UI/UX设计</span>
+                <span class="project-tag">智能合约</span>
+                <span class="project-tag">数据库管理</span>
+              </div>
+            </div>
 
-        <div class="row align-items-center">
-          <!-- <div class="col-lg-4 mb-5 mb-lg-0">
-            <h2 class="fw-bold mb-4 servies-title">比赛项目、课程设计</h2>
-            <p class="mb-4">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat velit class aptent taciti sociosqu ad litora.</p>
-            <a href="#" class="btn btn-outline-primary">See all services</a>
-          </div> -->
-          <div class="col-lg-8">
-            <div class="row g-4">
+            <div class="project-card">
+              <div class="project-header">
+                <h3 class="project-title">古玻璃工艺品组分分析鉴定研究</h3>
+                <span class="project-period">2023.09 - 2023.12</span>
+              </div>
+              <div class="project-content">
+                <ul>
+                  <li>作为组长，带领团队完成数学建模国赛并获得国家级二等奖（全国获奖比例低于5%）</li>
+                  <li>设计并实现了基于多种机器学习模型的古玻璃成分分析系统，包括岭回归、BP神经网络、决策树、聚类分析和集成学习</li>
+                  <li>利用岭回归模型评估图案、类型和颜色对玻璃风化程度的影响，准确率达到90%以上</li>
+                  <li>开发基于BP神经网络的化学成分预测模型，成功预测风化后的化学成分变化</li>
+                  <li>构建集成学习算法对古代玻璃文物进行精确分类，分类准确率达到90%以上</li>
+                </ul>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">机器学习</span>
+                <span class="project-tag">数据挖掘</span>
+                <span class="project-tag">数学建模</span>
+                <span class="project-tag">团队协作</span>
+              </div>
+            </div>
 
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-item">
-                  <i class="bi bi-activity icon"></i>
-                  <h3><a href="service-details.html">Eget nulla facilisi etiam</a></h3>
-                  <p>Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla.</p>
-                </div>
-              </div><!-- End Service Item -->
+            <div class="project-card">
+              <div class="project-header">
+                <h3 class="project-title">海关商品同名异归算法模型项目</h3>
+                <span class="project-period">2023.03 - 2023.12</span>
+              </div>
+              <div class="project-content">
+                <ul>
+                  <li>作为广东省"攀登计划"重点推荐项目组成员，在深圳大学大数据技术与应用研究所实验室参与科研工作</li>
+                  <li>负责数据处理和算法研究，复现并评估多种短文本主题模型（LDA、BTM、DMM等）</li>
+                  <li>利用StackOverflow等公开数据集进行模型训练和评估，在主题一致性等方面提供算法优化建议</li>
+                  <li>参与项目从数据处理到模型评估的全流程，提升了算法模型的准确性和实用性</li>
+                </ul>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">机器学习</span>
+                <span class="project-tag">自然语言处理</span>
+                <span class="project-tag">数据分析</span>
+                <span class="project-tag">科研项目</span>
+              </div>
+            </div>
 
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-item">
-                  <i class="bi bi-activity icon"></i>
-                  <h3><a href="service-details.html">Eget nulla facilisi etiam</a></h3>
-                  <p>Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla.</p>
-                </div>
-              </div><!-- End Service Item -->
+            <div class="project-card">
+              <div class="project-header">
+                <h3 class="project-title">基于知识图谱的智慧医疗问答系统</h3>
+                <span class="project-period">2023.09 - 2024.01</span>
+              </div>
+              <div class="project-content">
+                <ul>
+                  <li>作为软件工程专业毕业设计，开发了完整的智慧医疗问答系统，包含问答系统和就诊管理系统</li>
+                  <li>前端开发：基于Vue框架实现类ChatGPT的问答界面和就诊管理系统，使用Echarts实现知识图谱可视化</li>
+                  <li>后端服务1：使用Python构建医疗知识图谱，实现自然语言问句到Cypher查询的转换，基于Neo4j实现智能问答</li>
+                  <li>后端服务2：基于SpringBoot搭建管理系统后台，使用MyBatis实现就诊、医生、住院、病历等数据的CRUD功能</li>
+                </ul>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Vue.js</span>
+                <span class="project-tag">SpringBoot</span>
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Neo4j</span>
+                <span class="project-tag">MyBatis</span>
+                <span class="project-tag">Echarts</span>
+              </div>
+            </div>
 
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-item">
-                  <i class="bi bi-activity icon"></i>
-                  <h3><a href="service-details.html">Eget nulla facilisi etiam</a></h3>
-                  <p>Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla.</p>
-                </div>
-              </div><!-- End Service Item -->
+            <div class="project-card">
+              <div class="project-header">
+                <h3 class="project-title">股票管理系统（理财大师）</h3>
+                <span class="project-period">2023.03 - 2023.06</span>
+              </div>
+              <div class="project-content">
+                <ul>
+                  <li>担任前端开发组长，基于Vue框架实现完整的股票管理系统</li>
+                  <li>设计并实现用户友好的界面，支持股票数据展示、用户持仓管理、管理员权限控制等功能</li>
+                  <li>使用Echarts组件实现股票数据可视化，包括K线图、折线图等多种图表展示</li>
+                  <li>开发实时数据更新功能，实现股票数据的动态展示和用户交易数据的统计分析</li>
+                </ul>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Vue.js</span>
+                <span class="project-tag">Echarts</span>
+                <span class="project-tag">前端开发</span>
+                <span class="project-tag">数据可视化</span>
+                <span class="project-tag">团队协作</span>
+              </div>
+            </div>
 
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-item">
-                  <i class="bi bi-easel icon"></i>
-                  <h3><a href="service-details.html">Duis aute irure dolor</a></h3>
-                  <p>Auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="service-item">
-                  <i class="bi bi-broadcast icon"></i>
-                  <h3><a href="service-details.html">Excepteur sint occaecat</a></h3>
-                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="service-item">
-                  <i class="bi bi-bounding-box-circles icon"></i>
-                  <h3><a href="service-details.html">Tempor incididunt ut labore</a></h3>
-                  <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
-                </div>
-              </div><!-- End Service Item -->
-
+            <div class="project-card">
+              <div class="project-header">
+                <h3 class="project-title">可视化在微分方程教学中的应用</h3>
+                <span class="project-period">2023.09 - 2024.01</span>
+              </div>
+              <div class="project-content">
+                <ul>
+                  <li>作为数学师范专业毕业设计，创新性地将计算机可视化技术应用于微分方程教学</li>
+                  <li>开发程序实现微分方程的可视化展示，通过热力图等方式直观展示微分方程特性</li>
+                  <li>解决传统教学中难以绘制复杂微分方程图像的问题，提升教学效果</li>
+                  <li>结合计算机求解和可视化技术，创新教学方法，提高学生学习兴趣</li>
+                </ul>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">数据可视化</span>
+                <span class="project-tag">数学教育</span>
+                <span class="project-tag">教学创新</span>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
-
-    </section><!-- /Services Section -->
-
+    </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
@@ -602,11 +670,10 @@
             </ul>
           </div>
 
-          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+          <div class="isotope-container" data-aos="fade-up" data-aos-delay="300">
 
             <!-- 奖学金 -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+            <div class="portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/liyuan.jpg" class="img-fluid" alt="" loading="lazy">
@@ -625,7 +692,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+            <div class="portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/zq.jpg" class="img-fluid" alt="" loading="lazy">
@@ -644,7 +711,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+            <div class="portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/xx.jpg" class="img-fluid" alt="" loading="lazy">
@@ -663,7 +730,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+            <div class="portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/sshgqty.jpg" class="img-fluid" alt="" loading="lazy">
@@ -682,7 +749,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+            <div class="portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/sctt.jpg" class="img-fluid" alt="" loading="lazy">
@@ -701,7 +768,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+            <div class="portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/sctt.jpg" class="img-fluid" alt="" loading="lazy">
@@ -720,7 +787,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+            <div class="portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/gyzx.jpg" class="img-fluid" alt="" loading="lazy">
@@ -739,7 +806,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+            <div class="portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/wt.jpg" class="img-fluid" alt="" loading="lazy">
@@ -761,7 +828,7 @@
             <!-- 奖学金 End-->
 
              <!-- 数学建模 -->
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+            <div class="portfolio-item isotope-item filter-graphics">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/guo2.jpg" class="img-fluid" alt="" loading="lazy">
@@ -780,7 +847,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+            <div class="portfolio-item isotope-item filter-graphics">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/guosai.jpg" class="img-fluid" alt="" loading="lazy">
@@ -799,7 +866,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+            <div class="portfolio-item isotope-item filter-graphics">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/23meisai.png" class="img-fluid" alt="" loading="lazy">
@@ -818,7 +885,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+            <div class="portfolio-item isotope-item filter-graphics">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/22meisai.png" class="img-fluid" alt="" loading="lazy">
@@ -837,7 +904,7 @@
               </div>
             </div><!-- End Portfolio Item -->
             
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+            <div class="portfolio-item isotope-item filter-graphics">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/apmcm.jpg" class="img-fluid" alt="" loading="lazy">
@@ -859,7 +926,7 @@
 
             <!-- 数学竞赛 -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
+            <div class="portfolio-item isotope-item filter-motion">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/guo3.jpg" class="img-fluid" alt="" loading="lazy">
@@ -878,7 +945,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
+            <div class="portfolio-item isotope-item filter-motion">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/23math2.jpg" class="img-fluid" alt="" loading="lazy">
@@ -897,7 +964,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
+            <div class="portfolio-item isotope-item filter-motion">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/22math.jpg" class="img-fluid" alt="" loading="lazy">
@@ -919,7 +986,7 @@
 
             <!-- cs -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand">
+            <div class="portfolio-item isotope-item filter-brand">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/lqb.jpg" class="img-fluid" alt="" loading="lazy">
